@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a7ea67" >
+
+    <TextView
+        android:id="@+id/tdollar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Dollar" />
+
+    <TextView
+        android:id="@+id/tpounds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tdollar"
+        android:layout_below="@+id/tdollar"
+        android:layout_marginTop="17dp"
+        android:text="Pounds" />
+
+    <TextView
+        android:id="@+id/teuro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tpounds"
+        android:layout_below="@+id/tpounds"
+        android:layout_marginTop="22dp"
+        android:text="Euro" />
+
+    <EditText
+        android:id="@+id/editdollar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tpounds"
+        android:layout_alignTop="@+id/tdollar"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/tdollar"
+        android:ems="10"
+        android:inputType="number" 
+        android:background="#ffffff"/>
+
+    <EditText
+        android:id="@+id/editpounds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/teuro"
+        android:layout_alignLeft="@+id/editdollar"
+        android:layout_alignTop="@+id/tpounds"
+        android:ems="10"
+        android:inputType="number"
+        android:background="#ffffff" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editeuro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/teuro"
+        android:layout_alignLeft="@+id/editpounds"
+        android:layout_alignTop="@+id/teuro"
+        android:ems="10"
+        android:inputType="number" 
+        android:background="#ffffff"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/teuro"
+        android:layout_alignRight="@+id/editeuro"
+        android:layout_below="@+id/teuro"
+        android:layout_marginTop="17dp"
+        android:text="simpan" />
+
+</RelativeLayout>

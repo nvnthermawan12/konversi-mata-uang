@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">KonversiMataUang</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">KonversiMataUang</string>
+    <string name="title_activity_pembuka">konversi</string>
+
+</resources>

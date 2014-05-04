@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a7ea67" >
+
+    <AbsoluteLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+   <RadioGroup
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/radiogroup1" >
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="konversi dari dollar ke rupiah"
+            android:checked="true"
+            android:textColor="#000" />
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="konversi dari rupiah ke dollar"
+            android:textColor="#000" />
+</RadioGroup>
+
+   <TextView
+       android:id="@+id/mas"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_x="12dp"
+       android:layout_y="122dp"
+       android:textSize="15dp"
+       android:text="masukkan nilai:" />
+
+   <EditText
+       android:id="@+id/Editmas"
+       android:layout_width="127dp"
+       android:layout_height="wrap_content"
+       android:layout_x="132dp"
+       android:layout_y="123dp"
+       android:background="#ffffff"
+       android:ems="17"
+       android:inputType="number" />
+
+   <TextView
+       android:id="@+id/hasil"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_x="12dp"
+       android:layout_y="160dp"
+       android:text="Hasil konversi: "
+       android:textSize="15dp" />
+
+   <AutoCompleteTextView
+       android:id="@+id/hasilT"
+       android:layout_width="126dp"
+       android:layout_height="wrap_content"
+       android:layout_x="134dp"
+       android:layout_y="158dp"
+       android:background="#ffffff"
+       android:clickable="false"
+       android:duplicateParentState="false"
+       android:editable="false"
+       android:ems="10"
+       android:linksClickable="false"
+       android:longClickable="false"
+       android:scrollHorizontally="false"
+       android:selectAllOnFocus="false"
+       android:singleLine="false"
+       android:textAllCaps="false"
+       android:textColor="#000" />
+
+   <Button
+       android:id="@+id/knvrs"
+       android:layout_width="118dp"
+       android:layout_height="34dp"
+       android:layout_x="72dp"
+       android:layout_y="217dp"
+       android:text="Konversi" />
+   
+    </AbsoluteLayout>
+
+</RelativeLayout>
